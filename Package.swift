@@ -7,17 +7,17 @@ let version = "2.0.2"
 let checksum = ""
 
 let package = Package(
-    name: "CoreFlowNet",
+    name: "CoreFlowNetSDK",
     platforms: [
         .iOS(.v11)
     ],
     products: [
-        .library(name: "CoreFlowNet", targets: ["CoreFlowNetXCFramework"]),
+        .library(name: "CoreFlowNetSDK", targets: ["CoreFlowNetSDKXCFramework"]),
     ],
     targets: [
         .binaryTarget(
-            name: "CoreFlowNetXCFramework",
-            url: "https://github.com/balvenie-ios/CoreFlowNet/releases/download/\(version)/CoreFlowNet.xcframework.zip",
+            name: "CoreFlowNetSDKXCFramework",
+            url: "https://github.com/balvenie-ios/CoreFlowNetSDK/releases/download/\(version)/CoreFlowNetSDK.xcframework.zip",
             checksum: checksum
         ),
     ]
