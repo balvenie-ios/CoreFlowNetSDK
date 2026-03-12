@@ -13,9 +13,9 @@
 
 1. 在 Xcode 中選擇 **File > Add Packages...**。
 2. 輸入以下 GitHub 儲存庫 URL：
-   `https://github.com/balvenie-ios/CoreFlowNet.git`
+   `https://github.com/balvenie-ios/CoreFlowNetSDK.git`
 3. 在 **Dependency Rule** 選擇 **Up to Next Major Version**。
-4. 點擊 **Add Package**，並將 `CoreFlowNet` 勾選加入至您的 App Target。
+4. 點擊 **Add Package**，並將 `CoreFlowNetSDK` 勾選加入至您的 App Target。
 
 ---
 
@@ -25,7 +25,7 @@
 
 ```swift
 import UIKit
-import CoreFlowNet // 匯入 SDK
+import CoreFlowNetSDK // 匯入 SDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ```swift
 import SwiftUI
-import CoreFlowNet
+import CoreFlowNetSDK
 
 @main
 struct YourApp: App {
@@ -76,7 +76,7 @@ struct YourApp: App {
 
 ```objective-c
 #import <UIKit/UIKit.h>
-@import CoreFlowNet; // 使用 @import 語法匯入模組
+@import CoreFlowNetSDK; // 使用 @import 語法匯入模組
 
 @interface AppDelegate () <UIApplicationDelegate>
 @end
